@@ -118,20 +118,30 @@ h2,h3{
 color:hsl(332, 51%, 32%) ;
 }
 
+h3, li{
+  padding-left: 20px;
+}
+
+.paragraph2{
+  padding-bottom:15px;
+}
 hr{
-  color: hsl(30, 54%, 90%);
-  width: 90%;
+  color:  hsl(30, 54%, 90%);
+  width: 95%;
+}
+
+main{
+ max-width: 700px;
+ max-height: 1600px;
+ padding: 25px;
+ margin:10px;
+ border-radius: 15px;
+ background-color: white;
 }
 
 body{
- max-width: 700px;
- max-height: 1600px;
- padding: 27px;
- margin:10px;
- border-radius: 15px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
