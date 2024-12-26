@@ -118,7 +118,7 @@ h2,h3{
 color:hsl(332, 51%, 32%) ;
 }
 
-h3,li,ol{
+h3,li,strong{
   padding-left: 20px;
 }
 
@@ -130,6 +130,30 @@ hr{
   width: 95%;
 }
 
+ol { 
+  list-style: none; 
+  counter-reset: num;
+  padding: 0; 
+  margin: 0;
+} 
+
+ol li { 
+  counter-increment: num; 
+} 
+
+ol li::before { 
+  content: counter(num) ". "; 
+  color: hsl(332, 51%, 32%) ;
+  font-weight: bold;
+ }
+
+ .step1,.step2,.step3,.step4,.step5,.step6{
+  padding-bottom: 20px;
+ }
+ .step1{
+  padding-top: 20px;
+ }
+
 p{
   font-family: "Outfit";
   color:hsl(30, 10%, 34%);
@@ -138,18 +162,16 @@ p{
 .calories,.carbs,.protein,.fat{
   color: hsl(332, 51%, 32%) ;
   font-weight: bold;
-  
 }
 .containercalories,.containercarbs,.containerprotein,.containerfat {
- display:flex;
+  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items:flex-end;
+  justify-content:center;
 }
-
 main{
  max-width: 700px;
- max-height: 1600px;
+ max-height: 1700px;
  padding: 25px;
  margin:10px;
  border-radius: 15px;
