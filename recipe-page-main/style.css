@@ -163,15 +163,18 @@ p{
   color: hsl(332, 51%, 32%) ;
   font-weight: bold;
 }
+
 .containercalories,.containercarbs,.containerprotein,.containerfat {
-  display: flex;
+ display: flex;
   flex-direction: row;
-  align-items:flex-end;
-  justify-content:center;
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap: 250px;
+  padding-left: 50px;
 }
 main{
  max-width: 700px;
- max-height: 1700px;
+ max-height: 1800px;
  padding: 25px;
  margin:10px;
  border-radius: 15px;
