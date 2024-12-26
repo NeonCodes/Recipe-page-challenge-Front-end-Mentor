@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -72,57 +74,64 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
-
-
-
-
-
---root{
- - White: hsl(0, 0%, 100%)
-
-- Stone 100: hsl(30, 54%, 90%)
-- Stone 150: hsl(30, 18%, 87%)
-- Stone 600: hsl(30, 10%, 34%)
-- Stone 900: hsl(24, 5%, 18%)
-
-- Brown 800: hsl(14, 45%, 36%)
-
-- Rose 800: hsl(332, 51%, 32%)
-- Rose 50: hsl(330, 100%, 98%)
-}
+/*beginning of css styling*/
 
 
 html{
   background-color: hsl(30, 54%, 90%);
 }
 
-@font-face {
-  font-family:'Young Serif' ;
-  src: url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-  font-family: 'Oufit';
-  src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-}
-
-
 img{
-  max-width: 450px; 
-  max-height: 200px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  margin: 10px;
-  border-radius: 10px;
+  max-width: 700px; 
+  max-height: 300px;
+  border-radius: 8px;
+  align-self: center;
 }
 
-main{
- max-width: 440px;
+h1,h2,h3{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+strong, li{
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+.introduction1{
+font-family: "Outfit", serif;
+font-weight: 400;
+color:hsl(30, 10%, 34%);
+font-size: 1rem;
+text-align: justify;
+padding-bottom: 30px;
+}
+
+.paragraph1{
+  background-color: hsl(330, 100%, 98%); 
+  max-width: 630px;
+  max-height:300px;
+  padding:10px;
+}
+
+h2,h3{
+color:hsl(332, 51%, 32%) ;
+}
+
+hr{
+  color: hsl(30, 54%, 90%);
+  width: 90%;
+}
+
+body{
+ max-width: 700px;
  max-height: 1600px;
- padding: 30px;
+ padding: 27px;
  margin:10px;
  border-radius: 15px;
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
- background-color: yellow;
+ background-color: white;
 }
