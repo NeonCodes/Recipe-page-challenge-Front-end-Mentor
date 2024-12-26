@@ -130,6 +130,22 @@ hr{
   width: 95%;
 }
 
+p{
+  font-family: "Outfit";
+  color:hsl(30, 10%, 34%);
+}
+
+.calories,.carbs,.protein,.fat{
+  color: hsl(332, 51%, 32%) ;
+  font-weight: bold;
+  
+}
+.containercalories,.containercarbs,.containerprotein,.containerfat {
+ display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 main{
  max-width: 700px;
